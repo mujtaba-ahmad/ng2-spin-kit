@@ -5,6 +5,8 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS v2.x
 
 Inspired by angular-spinkit (https://github.com/Urigo/angular-spinkit)
 
+Improved WoltersKluwerPL/ng2-spin-kit (https://github.com/WoltersKluwerPL/ng2-spin-kit)
+
 ![ng2-spin-kit](ng2-spin-kit.gif?raw=true "ng2-spin-kit")
 
 ## Usage
