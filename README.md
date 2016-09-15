@@ -5,28 +5,30 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS v2.x
 
 Inspired by angular-spinkit (https://github.com/Urigo/angular-spinkit)
 
+Improved WoltersKluwerPL/ng2-spin-kit (https://github.com/WoltersKluwerPL/ng2-spin-kit)
+
 ![ng2-spin-kit](ng2-spin-kit.gif?raw=true "ng2-spin-kit")
 
 ## Usage
 1. Install with NPM:
   ```bash
-  npm install ng2-spin-kit --save
+  npm install ng2-spin-kit-new --save
   ```
 
 2. Import one component
   ```javascript
-  import {RotatingPlaneComponent} from 'ng2-spin-kit/app/spinner/rotating-plane.component'
+  import {RotatingPlaneComponent} from 'ng2-spin-kit-new/app/spinner/rotating-plane.component'
   ```
 
 3. or all of them
   ```javascript
-  import * as spinner from 'ng2-spin-kit/app/spinners'
+  import * as spinner from 'ng2-spin-kit-new/app/spinners'
   ```
   
 4. Use as a directive:
   ```javascript
   import {Component} from 'angular2/core';
-  import * as spinner from 'ng2-spin-kit/app/spinners';
+  import * as spinner from 'ng2-spin-kit-new/app/spinners';
   
   @Component({
     selector: 'app',
