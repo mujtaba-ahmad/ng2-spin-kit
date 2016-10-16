@@ -1,6 +1,6 @@
 {
   "name": "ng2-spin-kit-new",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "SpinKit (http://tobiasahlin.com/spinkit/) spinners for AngularJS 2.x",
   "repository": {
     "type": "git",
@@ -14,6 +14,15 @@
     "tsc:w": "tsc -w",
     "typings": "typings"
   },
+   "keywords": [
+    "spinner",
+    "angular2",
+    "angular 2",
+    "loading",
+    "loader",
+    "ng2",
+    "gifs"
+  ],
   "dependencies": {
     "@angular/common": "2.0.0-rc.4",
     "@angular/compiler": "2.0.0-rc.4",
