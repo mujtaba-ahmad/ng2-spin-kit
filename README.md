@@ -14,39 +14,60 @@ Improved WoltersKluwerPL/ng2-spin-kit (https://github.com/WoltersKluwerPL/ng2-sp
   ```bash
   npm install ng2-spin-kit-new --save
   ```
+### 1. Update your `systemjs.config.js` file.
+-Add following line in map:
 
-2. Import one component
+```js
+map: {
+      //...
+      'ng2-spin-kit-new': 'npm:ng2-spin-kit-new',
+     }
+```
+-and in packages:
+
+```js
+packages: {
+      //...
+      'ng2-spin-kit-new': {
+         main: './main.js',
+         defaultExtension: 'js'
+       },
+```
+
+### 2. Import one component in `app.module.ts`
   ```javascript
   import {RotatingPlaneComponent} from 'ng2-spin-kit-new/app/spinner/rotating-plane.component'
   ```
 
-3. or all of them
+### 3. or all of them in `app.module.ts`
   ```javascript
   import * as spinner from 'ng2-spin-kit-new/app/spinners'
   ```
   
-4. Use as a directive:
+### 4. Include as component in `@NgModule`:
   ```javascript
-  import {Component} from 'angular2/core';
+  import { NgModule }      from '@angular/core';
+  import { BrowserModule } from '@angular/platform-browser';
   import * as spinner from 'ng2-spin-kit-new/app/spinners';
   
-  @Component({
-    selector: 'app',
-    directives: [
-      spinner.RotatingPlaneComponent,
-      spinner.DoubleBounceComponent,
-      spinner.WaveComponent,
-      spinner.WanderingCubesComponent,
-      spinner.PulseComponent,
-      spinner.ChasingDotsComponent,
-      spinner.CircleComponent,
-      spinner.ThreeBounceComponent,
-      spinner.CubeGridComponent,
-      spinner.WordPressComponent,
-      spinner.FadingCircleComponent,
-      spinner.FoldingCubeComponent
-    ]
-  })
+@NgModule({
+  imports: [ BrowserModule ],
+  declarations: [ 
+                  spinner.RotatingPlaneComponent,
+                  spinner.DoubleBounceComponent,
+                  spinner.WaveComponent,
+                  spinner.WanderingCubesComponent,
+                  spinner.PulseComponent,
+                  spinner.ChasingDotsComponent,
+                  spinner.CircleComponent,
+                  spinner.ThreeBounceComponent,
+                  spinner.CubeGridComponent,
+                  spinner.WordPressComponent,
+                  spinner.FadingCircleComponent,
+                  spinner.FoldingCubeComponent
+                ],
+  bootstrap: [ AppComponent ]
+})
   ```
 
   ```html
